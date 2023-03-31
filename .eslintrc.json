@@ -1,3 +1,72 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:import/typescript"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "jsx-a11y/no-static-element-interactions": "off",
+    "default-param-last": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/no-array-index-key": "warn",
+    "no-return-assign": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [0, { "allow": "as-needed" }],
+    "@typescript-eslint/no-use-before-define": [
+      "off"
+    ],
+    "prefer-destructuring": "off",
+    "no-continue": "warn",
+    "no-await-in-loop": "warn",
+    "no-console": "off",
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
+    "global-require": "off",
+    "max-len": 0,
+    "linebreak-style": 0,
+    "import/prefer-default-export": "off",
+    "import/no-dynamic-require": "off",
+    "import/no-unresolved": "off",
+    "import/no-named-default": 0,
+    "import/extensions": "off",
+    "no-param-reassign": [2, { "props": false }],
+    "no-underscore-dangle": "off",
+    "no-promise-executor-return": "off",
+    "class-methods-use-this": "off",
+    "no-unused-expressions": "off",
+    "no-plusplus": ["warn", {  "allowForLoopAfterthoughts": true }],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-debugger": "warn",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [
+      "warn"
+    ],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn"
+    ]
+  }
 }
